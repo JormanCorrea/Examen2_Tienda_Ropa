@@ -13,10 +13,10 @@ namespace Examen2_Tienda_Ropa.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DBExamenEntities : DbContext
+    public partial class DBExamenEntities1 : DbContext
     {
-        public DBExamenEntities()
-            : base("name=DBExamenEntities")
+        public DBExamenEntities1()
+            : base("name=DBExamenEntities1")
         {
         }
     
@@ -28,5 +28,6 @@ namespace Examen2_Tienda_Ropa.Models
         public virtual DbSet<Cliente> Clientes { get; set; }
         public virtual DbSet<FotoPrenda> FotoPrendas { get; set; }
         public virtual DbSet<Prenda> Prendas { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }
